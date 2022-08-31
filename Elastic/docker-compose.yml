@@ -17,7 +17,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      # - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
       - ./elasticsearch_data:/usr/share/elasticsearch/data
   
 networks:
