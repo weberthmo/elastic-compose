@@ -18,8 +18,8 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - './kibana:/usr/share/kibana/data'
-      - './kibana/config/:/usr/share/kibana/config:ro'
+      - ./kibana:/usr/share/kibana/data
+      - ./kibana/config/:/usr/share/kibana/config:ro
     ports:
       - '5601:5601'
     expose:
