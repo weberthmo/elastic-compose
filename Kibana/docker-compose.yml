@@ -5,8 +5,8 @@ services:
     image: kibana:8.4.1
     container_name: kibana
     restart: 'unless-stopped'
-    depends_on:
-      - Elasticsearch
+    # depends_on:
+    #   - Elasticsearch
     environment:
      - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
