@@ -2,9 +2,9 @@ version: '3'
 
 services:
   Elasticsearch:
-    restart: 'unless-stopped'
+    # restart: 'unless-stopped'
     image: elasticsearch:8.4.1
-    container_name: Elasticsearch
+    container_name: elasticsearch
     ports:
       - '9200:9200'
     environment:
